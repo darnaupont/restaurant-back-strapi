@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ingredients",
+  "info": {
+    "singularName": "ingredient",
+    "pluralName": "ingredients",
+    "displayName": "ingredient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "dish": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::dish.dish",
+      "inversedBy": "ingredients"
+    },
+    "allergens": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::allergen.allergen"
+    },
+    "highlighted": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "default": false
+    },
+    "active": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

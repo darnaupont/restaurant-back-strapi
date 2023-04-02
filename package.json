@@ -1,5 +1,5 @@
 {
-  "name": "strapi",
+  "name": "restaurant-back",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -11,11 +11,12 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.5.5",
-    "@strapi/plugin-users-permissions": "4.5.5",
-    "@strapi/provider-upload-cloudinary": "4.5.5",
-    "@strapi/strapi": "4.5.5",
-    "pg": "8.8.0"
+    "@strapi/strapi": "4.9.0",
+    "@strapi/plugin-users-permissions": "4.9.0",
+    "@strapi/provider-upload-cloudinary": "^4.1.12",
+    "@strapi/plugin-i18n": "4.9.0",
+    "better-sqlite3": "7.4.6",
+    "pg": "^8.8.0"
   },
   "author": {
     "name": "A Strapi developer"

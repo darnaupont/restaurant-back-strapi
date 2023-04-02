@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_menu_prices",
+  "info": {
+    "displayName": "price",
+    "icon": "dollar-sign",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "coin": {
+      "type": "string",
+      "default": "€"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}
